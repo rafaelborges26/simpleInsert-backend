@@ -36,7 +36,7 @@ routes.get('/projects', logRequest, (request, response) => {
   ? projects.filter(project => project.title.includes(title))  //se tiver pegamos   
   : projects //se n tiver queue params mostramos td
   
-    return response.json({resoluts})
+    return response.json(resoluts)
 })  
   
 
